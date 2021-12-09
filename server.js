@@ -41,9 +41,13 @@ app.use(requestLogger)
 
 // register route files here:
 const personRoutes = require('./app/routes/person_routes')
+const placeRoutes = require('./app/routes/place_routes')
+const commentRoutes = require('./app/routes/comment_routes')
 
 // use route files here
 app.use(personRoutes)
+app.use(placeRoutes)
+app.use(commentRoutes)
 
 // GET /
 app.get('/', (req, res)=> {

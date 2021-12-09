@@ -7,9 +7,7 @@ const mongoose = require('mongoose')
 const commentSchema = require('./comment')
 
 // require the Person model, so if someone tries to populate the
-// 'owner' path. Then the 'Person' model has already been loaded.
-// If we forgot this step, we'd run into a nasty MissingSchemaError.
-// eslint-disable-next-line no-unused-vars
+// 'owner' path, then the 'Person' model has already been loaded.
 const Person = require('./person')
 
 // Create schema contstructor
