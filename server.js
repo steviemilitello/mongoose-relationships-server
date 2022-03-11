@@ -40,7 +40,8 @@ const requestLogger = require('./lib/request_logger')
 app.use(requestLogger)
 
 // register route files here:
-
+const personRoutes = require('./app/routes/person_routes')
+const placeRoutes = require('./app/routes/place_routes')
 
 // GET /
 app.get('/', (req, res)=> {
